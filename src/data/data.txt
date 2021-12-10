@@ -1,0 +1,62 @@
+------------------------------------------------
+Link
+------------------------------------------------
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+<link href="https://fonts.googleapis.com/css2?family=Karla:wght@300;400;500;600&family=Pacifico&family=Source+Sans+Pro:wght@400;600;700&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
+    
+
+<link href="https://fonts.googleapis.com/css2?family=M+PLUS+1+Code:wght@300;400&family=M+PLUS+2:wght@300&family=Poppins:wght@200;300;400&display=swap" rel="stylesheet" />
+  
+
+---------------
+font family
+---------------
+font-family: font-family: "M PLUS 1 Code", sans-serif;
+
+----------------------------------
+About Teks
+----------------------------------
+Im Frontend Developer located in Indonesia
+
+I am a high school graduate who is very interested in IT. I've been learning about programming myself even now
+
+I'm interested in the whole frontend stack Like trying new things and building great projects. In this Portofolio I want to show you my skill level
+-----------------------------
+Skill Teks
+-----------------------------
+I like to realize new ideas, especially in the interface of a website. making the website come alive is a fun challenge
+
+Skills :
+Html
+Css
+Bootstrap
+Js
+React
+
+Tools: 
+Vs Code
+Git
+Figma
+
+
+
+
+-----------------------------------------------	
+Theme
+-----------------------------------------------
+Light Theme :
+
+body: #F7F3CE
+text: #000
+font-family: font-family: "M PLUS 1 Code", sans-serif;
+
+Dark Theme :
+
+body: #000
+text: #F7F3CE
+font-family: font-family: "M PLUS 1 Code", sans-serif;
+---------------------------------------------------
+
+
