@@ -91,6 +91,11 @@ const Center = styled.div`
          top: ${(props) => (props.click ? "82%" : "50%")};
       }
    }
+   @media (max-width: 400px) {
+      & > :nth-child(2) {
+         transform: translate(-50%, -50%);
+      }
+   }
 `;
 const DarkDiv = styled.div`
    position: absolute;

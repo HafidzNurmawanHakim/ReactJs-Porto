@@ -81,13 +81,18 @@ const Title = styled(motion.span)`
          width: 100%;
       }
    }
+   @media (max-width: 400px) {
+      & {
+         margin-top: 1em;
+      }
+   }
 `;
 const Content = styled(motion.div)`
    padding-top: 2vw;
    display: flex;
-   height: 90%;
    flex-direction: column;
    overflow-y: hidden;
+   justify-content: space-around;
 
    @media (max-width: 600px) {
       & {
@@ -97,6 +102,7 @@ const Content = styled(motion.div)`
    }
    @media (max-width: 400px) {
       & {
+         margin-top: 0.5em;
          margin-left: 0.5em;
       }
    }
@@ -181,7 +187,7 @@ const Astronout = styled(motion.div)`
 `;
 const Sertificate = styled.div`
    width: 45%;
-   padding: 2vw;
+   padding: 1vw;
    position: absolute;
    top: 0;
    right: 0;
@@ -203,15 +209,15 @@ const Sertificate = styled.div`
          margin: auto;
          display: flex;
       }
-      h3 {
-         top: 1px;
-         position: absolute;
-      }
    }
    @media (max-width: 400px) {
       & {
-         margin-top: 10px;
+         padding-top: 0.5em;
          flex-direction: column;
+      }
+
+      h3 {
+         font-size: 0.7em;
       }
    }
 `;
@@ -282,7 +288,6 @@ const Preview = styled(motion.div)`
 `;
 
 const WorkPlace = styled(motion.div)`
-   height: 20vh;
    padding: 1em 1em;
    display: flex;
 `;
@@ -351,6 +356,34 @@ const ContentWork = styled.div`
 
       svg {
          margin-bottom: 1.1em;
+      }
+   }
+
+   @media (max-width: 400px) {
+      width: 95%;
+      & > .titleWork {
+         font-size: 0.8em;
+         margin-left: 1em;
+         width: 100%;
+
+         h3 {
+            margin-right: 1em;
+
+            span {
+               font-size: 0.8em;
+            }
+         }
+      }
+      p.longtime,
+      p.jobdesk,
+      p.jabatan {
+         margin-left: 1em;
+         font-size: 0.8em;
+      }
+
+      p.jobdesk {
+         font-size: 0.7em;
+         max-width: 110vw;
       }
    }
 `;
@@ -493,6 +526,10 @@ const Skills = () => {
                                  <img src={TYPESCRIPT} />
                                  Typescript
                               </li>
+                           </ul>
+                           <ul>
+                              <h5 style={{ opacity: 0 }}>Tools</h5>
+
                               <li className="iconimg">
                                  <img src={TAILWIND} />
                                  Tailwind CSS
@@ -501,9 +538,6 @@ const Skills = () => {
                                  <img src={PYTHON} />
                                  Python (Beginner)
                               </li>
-                           </ul>
-                           <ul>
-                              <h5>Tools</h5>
                               <li>
                                  <VscodeIcon className="icon" />
                                  Vs Code
@@ -544,7 +578,7 @@ const Skills = () => {
                               animate={{ y: 0, opacity: 1 }}
                               transition={{ type: "spring", duration: 1, delay: 1.5 }}
                               src={ReactHackerrank}
-                              onMouseEnter={() => setPreviewImg(ReactHackerrank)}
+                              onClick={() => setPreviewImg(ReactHackerrank)}
                               alt="sertificate"
                            />
                            <motion.img
@@ -552,7 +586,7 @@ const Skills = () => {
                               animate={{ y: 0, opacity: 1 }}
                               transition={{ type: "spring", duration: 1, delay: 1.5 }}
                               src={ReactCoursera}
-                              onMouseEnter={() => setPreviewImg(ReactCoursera)}
+                              onClick={() => setPreviewImg(ReactCoursera)}
                               alt="sertificate"
                            />
                            <motion.img
@@ -560,7 +594,7 @@ const Skills = () => {
                               animate={{ y: 0, opacity: 1 }}
                               transition={{ type: "spring", duration: 1, delay: 1.5 }}
                               src={REACTJS}
-                              onMouseEnter={() => setPreviewImg(REACTJS)}
+                              onClick={() => setPreviewImg(REACTJS)}
                               alt="sertificate"
                            />
                            <motion.img
@@ -568,7 +602,7 @@ const Skills = () => {
                               animate={{ y: 0, opacity: 1 }}
                               transition={{ type: "spring", duration: 1, delay: 1.8 }}
                               src={REACT}
-                              onMouseEnter={() => setPreviewImg(REACT)}
+                              onClick={() => setPreviewImg(REACT)}
                               alt="sertificate"
                            />
                            <motion.img
@@ -576,7 +610,7 @@ const Skills = () => {
                               animate={{ y: 0, opacity: 1 }}
                               transition={{ type: "spring", duration: 1, delay: 2 }}
                               src={JS}
-                              onMouseEnter={() => setPreviewImg(JS)}
+                              onClick={() => setPreviewImg(JS)}
                               alt="sertificate"
                            />
                            <motion.img
@@ -584,7 +618,7 @@ const Skills = () => {
                               animate={{ y: 0, opacity: 1 }}
                               transition={{ type: "spring", duration: 1, delay: 2.2 }}
                               src={HTML}
-                              onMouseEnter={() => setPreviewImg(HTML)}
+                              onClick={() => setPreviewImg(HTML)}
                               alt="sertificate"
                            />
                         </Image>

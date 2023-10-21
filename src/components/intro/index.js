@@ -95,7 +95,7 @@ const SubBox = styled(motion.div)`
          font-size: 13px;
       }
    }
-   @media (max-width: 360px) {
+   @media (max-width: 400px) {
       .pic {
          min-height: 350px;
          min-width: 150px;
