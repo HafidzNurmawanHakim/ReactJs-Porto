@@ -1,24 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
-
+import { AnimatePresence } from "framer-motion";
+import { useState } from "react";
+import { Route, Routes, useLocation } from "react-router";
+import { ThemeProvider } from "styled-components";
+import "./App.css";
+import { About, Main, Skills, WorkPage } from "./components";
+import PreLoader from "./subComponents/PreLoader";
+import Wa from "./subComponents/Wa";
+import { LightTheme } from "./theme/theme";
 function App() {
+  const location = useLocation();
+  const [load, setLoad] = useState(true);
+  setTimeout(() => {
+    setLoad(false);
+  }, 2000);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ThemeProvider theme={LightTheme}>
+      <AnimatePresence exitBeforeEnter>
+        <Routes location={location} key={location.pathname}>
+          <Route exact path="/" element={load ? <PreLoader /> : <Main />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/skills" element={<Skills />} />
+          <Route path="/work" element={<WorkPage />} />
+          <Route path="/wa" element={<Wa />} />
+        </Routes>
+      </AnimatePresence>
+    </ThemeProvider>
   );
 }
 
