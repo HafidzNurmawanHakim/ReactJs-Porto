@@ -4,7 +4,7 @@ import oldPorto from "../assets/img/old-porto.png";
 import todoApp from "../assets/img/todo-app.png";
 import landingPage from "../assets/img/landing-page.png";
 import reactEcommerce from "../assets/img/detail product.png";
-import bugyou from "../assets/img/bugyou.png";
+import bugyou from "../assets/img/bugyou.jpg";
 import quran from "../assets/img/quran web app.png";
 
 export const data = [
@@ -12,9 +12,9 @@ export const data = [
       image: bugyou,
       title: "Bug You",
       caption: "Social Media WebApp with Django Service",
-      tags: ["typescript", "tailwind css", "react", "python", "django"],
+      tags: ["typescript", "tailwind css", "react", "redux", "python", "django"],
       status: "Under Development",
-      demo: "",
+      demo: "https://hafidznurmawan-dev.my.id",
       github: "",
    },
    {
